@@ -1,0 +1,44 @@
+# ============================================
+# STM32-WATCH  Keil MDK 工程忽略规则
+# ============================================
+
+# ---------- 1. Keil 编译产物（每次编译都会变，绝不入库）----------
+Objects/
+Listings/
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.lnp
+*.sct
+*.iex
+*.sbr
+*.i
+*.tra
+*.__i
+
+# ---------- 2. Keil 用户级配置（含用户名/窗口布局，因人而异）----------
+*.uvguix.*
+
+# ---------- 3. 调试器与仿真器临时文件 ----------
+DebugConfig/
+JLinkLog.txt
+JLinkSettings.ini
+*.dbgconf
+
+# ---------- 4. 操作系统与编辑器垃圾文件 ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*.swo
+*~
+
+# ---------- 5. VS Code / 其他 IDE ----------
+.vscode/
+.idea/
